@@ -1,0 +1,2459 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Pflegegrad ermitteln | AntragHilfe.de
+    </title>
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="/pictures/AntragLogo.png"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        href="/pictures/AntragLogo.png"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header">
+
+    <nav class="navbar">
+
+        <a
+            href="index.html"
+            class="brand"
+        >
+
+            <div class="brand-logo-wrap">
+
+                <img
+                    src="/pictures/AntragLogo.png"
+                    alt="AntragHilfe.de Logo"
+                    class="brand-logo"
+                >
+
+            </div>
+
+            <div class="brand-name">
+
+                <span class="brand-main">
+                    AntragHilfe
+                </span>
+
+                <span class="brand-de">
+                    .de
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <div class="nav-links">
+
+            <a
+                href="index.html"
+                class="nav-link"
+            >
+                Start
+            </a>
+
+            <a
+                href="index.html#hilfe"
+                class="nav-link current"
+            >
+                Hilfe finden
+                <span class="nav-chevron"></span>
+            </a>
+
+            <a
+                href="#"
+                class="nav-link"
+            >
+                Themen
+                <span class="nav-chevron"></span>
+            </a>
+
+            <a
+                href="#"
+                class="nav-link"
+            >
+                Anträge &amp; Schreiben
+                <span class="nav-chevron"></span>
+            </a>
+
+            <a
+                href="#"
+                class="nav-link"
+            >
+                Wissen
+                <span class="nav-chevron"></span>
+            </a>
+
+            <a
+                href="#"
+                class="nav-link"
+            >
+                Über uns
+                <span class="nav-chevron"></span>
+            </a>
+
+        </div>
+
+
+        <a
+            href="tel:022325011262"
+            class="nav-phone"
+        >
+            <span>☎</span>
+            02232 5011262
+        </a>
+
+
+        <a
+            href="kontakt.html#termin"
+            class="nav-cta"
+        >
+            Termin vereinbaren
+            <span>▣</span>
+        </a>
+
+
+        <button
+            class="menu-button"
+            type="button"
+            aria-label="Navigation öffnen"
+        >
+            ☰
+        </button>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="page-hero care-calculator-hero">
+
+    <div class="page-hero-inner">
+
+        <nav
+            class="breadcrumb"
+            aria-label="Brotkrümelnavigation"
+        >
+
+            <a href="index.html">
+                Start
+            </a>
+
+            <span>›</span>
+
+            <a href="index.html#hilfe">
+                Hilfe finden
+            </a>
+
+            <span>›</span>
+
+            <span aria-current="page">
+                Pflegegrad ermitteln
+            </span>
+
+        </nav>
+
+
+        <div class="page-hero-content">
+
+            <span class="page-eyebrow">
+                Pflege &amp; Unterstützung
+            </span>
+
+            <h1>
+                Pflegegrad ermitteln
+            </h1>
+
+            <p>
+                Beantworten Sie Schritt für Schritt die Fragen
+                aus den sechs Bereichen der Pflegebegutachtung.
+                Ihre Punkte und eine erste Einschätzung des
+                möglichen Pflegegrades werden automatisch berechnet.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CALCULATOR
+========================================================= -->
+
+<main class="pflege-calculator">
+
+    <div class="pflege-calculator-inner">
+
+
+        <!-- =====================================================
+             INTRO
+        ====================================================== -->
+
+        <section class="pflege-intro">
+
+            <div>
+
+                <span class="section-eyebrow">
+                    Orientierungshilfe
+                </span>
+
+                <h2>
+                    Wie funktioniert die Einschätzung?
+                </h2>
+
+                <p>
+                    Die Pflegebegutachtung betrachtet sechs
+                    Lebensbereiche. Entscheidend ist nicht allein
+                    eine Erkrankung, sondern wie selbständig eine
+                    Person ihren Alltag bewältigen kann und wo
+                    regelmäßig Unterstützung benötigt wird.
+                </p>
+
+            </div>
+
+
+            <aside class="pflege-notice">
+
+                <div class="pflege-notice-icon">
+                    i
+                </div>
+
+                <div>
+
+                    <strong>
+                        Bitte beachten
+                    </strong>
+
+                    <p>
+                        Das Ergebnis dient ausschließlich der
+                        persönlichen Orientierung. Die verbindliche
+                        Feststellung eines Pflegegrades erfolgt durch
+                        die zuständige Pflegekasse beziehungsweise
+                        den Medizinischen Dienst.
+                    </p>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             STICKY RESULT
+        ====================================================== -->
+
+        <section
+            class="pflege-result-bar"
+            aria-live="polite"
+        >
+
+            <div class="pflege-result-main">
+
+                <span class="pflege-result-label">
+                    Aktuelle Einschätzung
+                </span>
+
+                <div class="pflege-grade-line">
+
+                    <strong id="pflege-grade">
+                        Noch keine Einstufung
+                    </strong>
+
+                    <span id="pflege-points">
+                        0 Punkte
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="pflege-result-progress">
+
+                <div class="pflege-result-progress-head">
+
+                    <span>
+                        Fragen beantwortet
+                    </span>
+
+                    <strong id="answer-progress-label">
+                        0 %
+                    </strong>
+
+                </div>
+
+                <div class="pflege-progress-track">
+
+                    <div
+                        class="pflege-progress-fill"
+                        id="answer-progress"
+                    ></div>
+
+                </div>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="pflege-reset-button"
+                id="pflege-reset"
+            >
+                Neu beginnen
+            </button>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             MODULE SUMMARY
+        ====================================================== -->
+
+        <div class="pflege-module-overview">
+
+            <div class="pflege-module-pill">
+                <strong>1</strong>
+                <span>Mobilität</span>
+                <small>10 %</small>
+            </div>
+
+            <div class="pflege-module-pill">
+                <strong>2</strong>
+                <span>Kognition</span>
+                <small>15 %*</small>
+            </div>
+
+            <div class="pflege-module-pill">
+                <strong>3</strong>
+                <span>Verhalten</span>
+                <small>15 %*</small>
+            </div>
+
+            <div class="pflege-module-pill">
+                <strong>4</strong>
+                <span>Selbstversorgung</span>
+                <small>40 %</small>
+            </div>
+
+            <div class="pflege-module-pill">
+                <strong>5</strong>
+                <span>Therapie</span>
+                <small>20 %</small>
+            </div>
+
+            <div class="pflege-module-pill">
+                <strong>6</strong>
+                <span>Alltagsleben</span>
+                <small>15 %</small>
+            </div>
+
+        </div>
+
+        <p class="pflege-module-note">
+            * Aus Modul 2 und Modul 3 fließt nur der höhere
+            gewichtete Wert in das Gesamtergebnis ein.
+        </p>
+
+
+
+        <!-- =====================================================
+             SPECIAL CONDITION
+        ====================================================== -->
+
+        <section class="pflege-special-condition">
+
+            <div>
+
+                <span class="section-eyebrow">
+                    Besondere Bedarfskonstellation
+                </span>
+
+                <h2>
+                    Gebrauchsunfähigkeit beider Arme und Beine
+                </h2>
+
+                <p>
+                    Liegt ein vollständiger Verlust der Greif-,
+                    Steh- und Gehfunktionen vor?
+                </p>
+
+            </div>
+
+
+            <label class="pflege-special-toggle">
+
+                <input
+                    type="checkbox"
+                    id="special-condition"
+                >
+
+                <span>
+                    Ja, diese besondere Bedarfskonstellation liegt vor
+                </span>
+
+            </label>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             QUESTION MODULES ARE GENERATED HERE
+        ====================================================== -->
+
+        <section
+            class="pflege-modules"
+            id="pflege-modules"
+        ></section>
+
+
+
+        <!-- =====================================================
+             FINAL RESULT
+        ====================================================== -->
+
+        <section class="pflege-final-result">
+
+            <div class="pflege-final-icon">
+                ✓
+            </div>
+
+            <span class="section-eyebrow">
+                Ihre Orientierung
+            </span>
+
+            <h2 id="final-grade">
+                Noch keine Einstufung
+            </h2>
+
+            <div class="pflege-final-score">
+                <strong id="final-points">
+                    0
+                </strong>
+                <span>
+                    von 100 gewichteten Punkten
+                </span>
+            </div>
+
+
+            <div
+                class="pflege-score-breakdown"
+                id="score-breakdown"
+            ></div>
+
+
+            <p>
+                Dieses Ergebnis ersetzt keine Begutachtung.
+                Für einen verbindlichen Pflegegrad muss ein Antrag
+                bei der Pflegekasse gestellt werden.
+            </p>
+
+
+            <div class="pflege-final-actions">
+
+                <a
+                    href="kontakt.html"
+                    class="pflege-final-secondary"
+                >
+                    Beratung kontaktieren
+                </a>
+
+                <a
+                    href="index.html#hilfe"
+                    class="pflege-final-primary"
+                >
+                    Zurück zum Hilfe-Finder
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-inner">
+
+        <div class="footer-grid">
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Antraghilfe
+                </h3>
+
+                <p class="footer-description">
+                    Ein Angebot des VdK
+                    <br>
+                    Ortsverbands Brühl
+                </p>
+
+                <div class="footer-contact-list">
+
+                    <div class="footer-contact-item">
+
+                        <span>⌖</span>
+
+                        <span>
+                            Rheinstraße 205
+                            <br>
+                            50321 Brühl
+                        </span>
+
+                    </div>
+
+                    <a
+                        href="tel:022325011262"
+                        class="footer-contact-item"
+                    >
+                        <span>☎</span>
+                        <span>02232 5011262</span>
+                    </a>
+
+                    <a
+                        href="mailto:info@antraghilfe.de"
+                        class="footer-contact-item"
+                    >
+                        <span>✉</span>
+                        <span>info@antraghilfe.de</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Hilfe finden
+                </h3>
+
+                <nav class="footer-links">
+
+                    <a href="index.html#hilfe">
+                        Was steht mir zu?
+                    </a>
+
+                    <a href="index.html#hilfe">
+                        Anspruch prüfen
+                    </a>
+
+                    <a href="sozialleistungen.html">
+                        Alle Leistungen
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Themen
+                </h3>
+
+                <nav class="footer-links">
+
+                    <a href="#">
+                        Behinderung &amp; GdB
+                    </a>
+
+                    <a href="#">
+                        Pflege &amp; Unterstützung
+                    </a>
+
+                    <a href="#">
+                        Rente &amp; Altersvorsorge
+                    </a>
+
+                    <a href="#">
+                        Arbeit &amp; Einkommen
+                    </a>
+
+                    <a href="#">
+                        Weitere Leistungen
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Anträge &amp; Schreiben
+                </h3>
+
+                <nav class="footer-links">
+
+                    <a href="#">
+                        Antragsformulare
+                    </a>
+
+                    <a href="#">
+                        Widerspruch
+                    </a>
+
+                    <a href="#">
+                        Klage
+                    </a>
+
+                    <a href="#">
+                        Alle Muster
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Wissen
+                </h3>
+
+                <nav class="footer-links">
+
+                    <a href="#">
+                        Ratgeber &amp; Artikel
+                    </a>
+
+                    <a href="#">
+                        Arbeitshilfen
+                    </a>
+
+                    <a href="#">
+                        Rechtliches
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>
+                    Über uns
+                </h3>
+
+                <nav class="footer-links">
+
+                    <a href="#">
+                        Wer wir sind
+                    </a>
+
+                    <a href="#">
+                        Beratung vor Ort
+                    </a>
+
+                    <a href="kontakt.html">
+                        Kontakt
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <div class="footer-consultation">
+
+                <h3>
+                    Persönliche Beratung
+                </h3>
+
+                <p>
+                    Dienstags 10:00 – 17:00 Uhr
+                    <br>
+                    und nach Vereinbarung
+                </p>
+
+                <a
+                    href="kontakt.html#termin"
+                    class="footer-consultation-button"
+                >
+                    <span>
+                        Termin vereinbaren
+                    </span>
+
+                    <span>
+                        ▣
+                    </span>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div>
+                © 2026 VdK Ortsverband Brühl
+            </div>
+
+            <nav class="footer-legal">
+
+                <a href="#">
+                    Impressum
+                </a>
+
+                <a href="#">
+                    Datenschutz
+                </a>
+
+                <a href="#">
+                    Hinweis zur Online-Beratung
+                </a>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================================
+     PFLEGEGRAD CALCULATOR
+========================================================= -->
+
+<script>
+
+const MODULES = [
+
+    /* =====================================================
+       MODUL 1
+    ===================================================== */
+
+    {
+        id: 1,
+        title: "Mobilität",
+        subtitle: "Wie selbständig kann sich die Person bewegen und ihre Körperposition verändern?",
+        weight: "10 %",
+        scale: "independence",
+        questions: [
+            "Positionswechsel im Bett",
+            "Halten einer stabilen Sitzposition",
+            "Umsetzen",
+            "Fortbewegen innerhalb des Wohnbereichs",
+            "Treppensteigen"
+        ]
+    },
+
+
+    /* =====================================================
+       MODUL 2
+    ===================================================== */
+
+    {
+        id: 2,
+        title: "Kognitive und kommunikative Fähigkeiten",
+        subtitle: "Wie gut können Situationen erkannt, verstanden und Entscheidungen getroffen werden?",
+        weight: "15 %*",
+        scale: "cognitive",
+        questions: [
+            "Erkennen von Personen aus dem näheren Umfeld",
+            "Örtliche Orientierung",
+            "Zeitliche Orientierung",
+            "Erinnern an wesentliche Ereignisse oder Beobachtungen",
+            "Steuern von mehrschrittigen Alltagshandlungen",
+            "Treffen von Entscheidungen im Alltag",
+            "Verstehen von Sachverhalten und Informationen",
+            "Erkennen von Risiken und Gefahren",
+            "Mitteilen von elementaren Bedürfnissen",
+            "Verstehen von Aufforderungen",
+            "Beteiligen an einem Gespräch"
+        ]
+    },
+
+
+    /* =====================================================
+       MODUL 3
+    ===================================================== */
+
+    {
+        id: 3,
+        title: "Verhaltensweisen und psychische Problemlagen",
+        subtitle: "Wie häufig ist aufgrund bestimmter Verhaltensweisen personelle Unterstützung erforderlich?",
+        weight: "15 %*",
+        scale: "frequency",
+        questions: [
+            "Motorisch geprägte Auffälligkeiten",
+            "Nächtliche Unruhe",
+            "Selbstschädigendes und autoaggressives Verhalten",
+            "Beschädigen von Gegenständen",
+            "Physisch aggressives Verhalten gegenüber anderen Personen",
+            "Verbale Aggression",
+            "Andere pflegerelevante vokale Auffälligkeiten",
+            "Abwehr pflegerischer und anderer unterstützender Maßnahmen",
+            "Wahnvorstellungen",
+            "Ängste",
+            "Antriebslosigkeit bei depressiver Stimmungslage",
+            "Sozial inadäquate Verhaltensweisen",
+            "Sonstige pflegerelevante inadäquate Verhaltensweisen"
+        ]
+    },
+
+
+    /* =====================================================
+       MODUL 4
+    ===================================================== */
+
+    {
+        id: 4,
+        title: "Selbstversorgung",
+        subtitle: "Wie selbständig können Körperpflege, Essen, Trinken und Toilettengänge bewältigt werden?",
+        weight: "40 %",
+        scale: "selfcare",
+        questions: [
+
+            {
+                name: "Waschen des vorderen Oberkörpers",
+                scores: [0,1,2,3]
+            },
+
+            {
+                name: "Körperpflege im Bereich des Kopfes",
+                scores: [0,1,2,3]
+            },
+
+            {
+                name: "Waschen des Intimbereichs",
+                scores: [0,1,2,3]
+            },
+
+            {
+                name: "Duschen und Baden einschließlich Waschen der Haare",
+                scores: [0,1,2,3]
+            },
+
+            {
+                name: "An- und Auskleiden des Oberkörpers",
+                scores: [0,1,2,3]
+            },
+
+            {
+                name: "An- und Auskleiden des Unterkörpers",
+                scores: [0,1,2,3]
+            },
+
+            {
+                name: "Mundgerechtes Zubereiten der Nahrung und Eingießen von Getränken",
+                scores: [0,1,2,3]
+            },
+
+            {
+                name: "Essen",
+                scores: [0,3,6,9]
+            },
+
+            {
+                name: "Trinken",
+                scores: [0,2,4,6]
+            },
+
+            {
+                name: "Benutzen einer Toilette oder eines Toilettenstuhls",
+                scores: [0,2,4,6]
+            },
+
+            {
+                name: "Bewältigen der Folgen einer Harninkontinenz / Umgang mit Dauerkatheter oder Urostoma",
+                scores: [0,1,2,3]
+            },
+
+            {
+                name: "Bewältigen der Folgen einer Stuhlinkontinenz / Umgang mit Stoma",
+                scores: [0,1,2,3]
+            },
+
+            {
+                name: "Ernährung parenteral oder über Sonde",
+                special: "nutrition"
+            }
+
+        ]
+    },
+
+
+    /* =====================================================
+       MODUL 5
+    ===================================================== */
+
+    {
+        id: 5,
+        title: "Krankheits- oder therapiebedingte Anforderungen",
+        subtitle: "Wie häufig wird Unterstützung bei Medikamenten, Therapien oder medizinischen Maßnahmen benötigt?",
+        weight: "20 %",
+        scale: "therapy",
+        questions: [
+            "Medikation",
+            "Injektionen",
+            "Versorgung intravenöser Zugänge (z. B. Port)",
+            "Absaugen und Sauerstoffgabe",
+            "Einreibungen sowie Kälte- und Wärmeanwendungen",
+            "Messung und Deutung von Körperzuständen",
+            "Körpernahe Hilfsmittel",
+            "Verbandswechsel und Wundversorgung",
+            "Versorgung bei Stoma",
+            "Regelmäßige Einmalkatheterisierung und Nutzung von Abführmethoden",
+            "Therapiemaßnahmen in häuslicher Umgebung",
+            "Zeit- und technikintensive Maßnahmen in häuslicher Umgebung",
+            "Arztbesuche",
+            "Besuche anderer medizinischer oder therapeutischer Einrichtungen bis zu drei Stunden",
+            "Zeitlich ausgedehnte Besuche medizinischer oder therapeutischer Einrichtungen länger als drei Stunden",
+            "Einhaltung einer Diät oder anderer krankheits- oder therapiebedingter Verhaltensvorschriften"
+        ]
+    },
+
+
+    /* =====================================================
+       MODUL 6
+    ===================================================== */
+
+    {
+        id: 6,
+        title: "Gestaltung des Alltagslebens und sozialer Kontakte",
+        subtitle: "Wie selbständig kann der Alltag geplant, gestaltet und sozialer Kontakt gepflegt werden?",
+        weight: "15 %",
+        scale: "independence",
+        questions: [
+            "Gestaltung des Tagesablaufs und Anpassung an Veränderungen",
+            "Ruhen und Schlafen",
+            "Sich beschäftigen",
+            "Vornehmen von in die Zukunft gerichteten Planungen",
+            "Interaktion mit Personen im direkten Kontakt",
+            "Kontaktpflege zu Personen außerhalb des direkten Umfeldes"
+        ]
+    }
+
+];
+
+
+
+/* =========================================================
+   OPTION DEFINITIONS
+========================================================= */
+
+const INDEPENDENCE_OPTIONS = [
+    ["", "Bitte auswählen"],
+    ["0", "Selbständig"],
+    ["1", "Überwiegend selbständig"],
+    ["2", "Überwiegend unselbständig"],
+    ["3", "Unselbständig"]
+];
+
+
+const COGNITIVE_OPTIONS = [
+    ["", "Bitte auswählen"],
+    ["0", "Fähigkeit vorhanden"],
+    ["1", "Fähigkeit größtenteils vorhanden"],
+    ["2", "Fähigkeit in geringem Maße vorhanden"],
+    ["3", "Fähigkeit nicht vorhanden"]
+];
+
+
+const FREQUENCY_OPTIONS = [
+    ["", "Bitte auswählen"],
+    ["0", "Nie oder sehr selten"],
+    ["1", "Selten"],
+    ["3", "Häufig"],
+    ["5", "Täglich"]
+];
+
+
+
+/* =========================================================
+   CREATE SELECT
+========================================================= */
+
+function createSelect(options, moduleId, questionIndex) {
+
+    const select =
+        document.createElement("select");
+
+
+    select.dataset.module =
+        moduleId;
+
+    select.dataset.question =
+        questionIndex;
+
+
+    options.forEach(option => {
+
+        const element =
+            document.createElement("option");
+
+        element.value =
+            option[0];
+
+        element.textContent =
+            option[1];
+
+        select.appendChild(element);
+
+    });
+
+
+    select.addEventListener(
+        "change",
+        calculateEverything
+    );
+
+
+    return select;
+
+}
+
+
+
+/* =========================================================
+   STANDARD QUESTION
+========================================================= */
+
+function createStandardQuestion(
+    module,
+    question,
+    index
+) {
+
+    const row =
+        document.createElement("div");
+
+    row.className =
+        "pflege-question";
+
+
+    const text =
+        document.createElement("div");
+
+    text.className =
+        "pflege-question-text";
+
+
+    const number =
+        document.createElement("span");
+
+    number.className =
+        "pflege-question-number";
+
+    number.textContent =
+        `${module.id}.${index + 1}`;
+
+
+    const title =
+        document.createElement("strong");
+
+    title.textContent =
+        typeof question === "string"
+            ? question
+            : question.name;
+
+
+    text.append(
+        number,
+        title
+    );
+
+
+    let select;
+
+
+    if (
+        module.scale === "independence"
+    ) {
+
+        select =
+            createSelect(
+                INDEPENDENCE_OPTIONS,
+                module.id,
+                index
+            );
+
+    }
+
+
+    if (
+        module.scale === "cognitive"
+    ) {
+
+        select =
+            createSelect(
+                COGNITIVE_OPTIONS,
+                module.id,
+                index
+            );
+
+    }
+
+
+    if (
+        module.scale === "frequency"
+    ) {
+
+        select =
+            createSelect(
+                FREQUENCY_OPTIONS,
+                module.id,
+                index
+            );
+
+    }
+
+
+    if (
+        module.scale === "selfcare"
+    ) {
+
+        if (question.special === "nutrition") {
+
+            select =
+                createSelect(
+                    [
+                        ["", "Bitte auswählen"],
+                        ["0", "Entfällt / selbständig / nicht täglich"],
+                        ["6", "Täglich zusätzlich zur oralen Ernährung"],
+                        ["3", "Ausschließlich oder nahezu ausschließlich"]
+                    ],
+                    module.id,
+                    index
+                );
+
+        } else {
+
+            select =
+                createSelect(
+                    [
+                        ["", "Bitte auswählen"],
+                        [question.scores[0], "Selbständig"],
+                        [question.scores[1], "Überwiegend selbständig"],
+                        [question.scores[2], "Überwiegend unselbständig"],
+                        [question.scores[3], "Unselbständig"]
+                    ],
+                    module.id,
+                    index
+                );
+
+        }
+
+    }
+
+
+    const inputWrap =
+        document.createElement("div");
+
+    inputWrap.className =
+        "pflege-question-control";
+
+    inputWrap.appendChild(select);
+
+
+    row.append(
+        text,
+        inputWrap
+    );
+
+
+    return row;
+
+}
+
+
+
+/* =========================================================
+   THERAPY QUESTION
+========================================================= */
+
+function createTherapyQuestion(
+    module,
+    question,
+    index
+) {
+
+    const row =
+        document.createElement("div");
+
+    row.className =
+        "pflege-question therapy-question";
+
+
+    const text =
+        document.createElement("div");
+
+    text.className =
+        "pflege-question-text";
+
+
+    const number =
+        document.createElement("span");
+
+    number.className =
+        "pflege-question-number";
+
+    number.textContent =
+        `5.${index + 1}`;
+
+
+    const title =
+        document.createElement("strong");
+
+    title.textContent =
+        question;
+
+
+    text.append(
+        number,
+        title
+    );
+
+
+
+    /* 5.16 */
+
+    if (index === 15) {
+
+        const select =
+            createSelect(
+                INDEPENDENCE_OPTIONS,
+                5,
+                index
+            );
+
+        select.classList.add(
+            "therapy-independence"
+        );
+
+        const wrap =
+            document.createElement("div");
+
+        wrap.className =
+            "pflege-question-control";
+
+        wrap.appendChild(select);
+
+
+        row.append(
+            text,
+            wrap
+        );
+
+
+        return row;
+
+    }
+
+
+
+    const controls =
+        document.createElement("div");
+
+    controls.className =
+        "therapy-frequency-controls";
+
+
+    const unit =
+        document.createElement("select");
+
+    unit.dataset.module =
+        "5";
+
+    unit.dataset.question =
+        index;
+
+    unit.className =
+        "therapy-unit";
+
+
+    [
+        ["", "Bitte auswählen"],
+        ["none", "Entfällt / selbständig"],
+        ["day", "pro Tag"],
+        ["week", "pro Woche"],
+        ["month", "pro Monat"]
+    ].forEach(option => {
+
+        const item =
+            document.createElement("option");
+
+        item.value =
+            option[0];
+
+        item.textContent =
+            option[1];
+
+        unit.appendChild(item);
+
+    });
+
+
+
+    const amount =
+        document.createElement("input");
+
+    amount.type =
+        "number";
+
+    amount.min =
+        "0";
+
+    amount.step =
+        "1";
+
+    amount.placeholder =
+        "Anzahl";
+
+    amount.dataset.module =
+        "5";
+
+    amount.dataset.question =
+        index;
+
+    amount.className =
+        "therapy-amount";
+
+    amount.disabled =
+        true;
+
+
+
+    unit.addEventListener(
+        "change",
+        () => {
+
+            const needsAmount =
+                ["day", "week", "month"]
+                    .includes(unit.value);
+
+
+            amount.disabled =
+                !needsAmount;
+
+
+            if (!needsAmount) {
+                amount.value = "";
+            }
+
+
+            calculateEverything();
+
+        }
+    );
+
+
+    amount.addEventListener(
+        "input",
+        calculateEverything
+    );
+
+
+    controls.append(
+        unit,
+        amount
+    );
+
+
+    row.append(
+        text,
+        controls
+    );
+
+
+    return row;
+
+}
+
+
+
+/* =========================================================
+   RENDER MODULES
+========================================================= */
+
+function renderModules() {
+
+    const container =
+        document.getElementById(
+            "pflege-modules"
+        );
+
+
+    MODULES.forEach(
+        (module, moduleIndex) => {
+
+
+            const details =
+                document.createElement("details");
+
+            details.className =
+                "pflege-module-card";
+
+            details.dataset.module =
+                module.id;
+
+
+            if (moduleIndex === 0) {
+                details.open = true;
+            }
+
+
+
+            const summary =
+                document.createElement("summary");
+
+
+            summary.innerHTML = `
+
+                <div class="pflege-module-number">
+                    ${module.id}
+                </div>
+
+                <div class="pflege-module-title">
+
+                    <span>
+                        Modul ${module.id}
+                    </span>
+
+                    <strong>
+                        ${module.title}
+                    </strong>
+
+                </div>
+
+                <div class="pflege-module-weight">
+                    ${module.weight}
+                </div>
+
+                <div
+                    class="pflege-module-score"
+                    id="module-score-${module.id}"
+                >
+                    0 Punkte
+                </div>
+
+                <span class="pflege-module-chevron">
+                    +
+                </span>
+
+            `;
+
+
+            const content =
+                document.createElement("div");
+
+            content.className =
+                "pflege-module-content";
+
+
+            const intro =
+                document.createElement("p");
+
+            intro.className =
+                "pflege-module-description";
+
+            intro.textContent =
+                module.subtitle;
+
+
+            content.appendChild(intro);
+
+
+
+            module.questions.forEach(
+                (question, questionIndex) => {
+
+                    const row =
+                        module.scale === "therapy"
+                            ? createTherapyQuestion(
+                                module,
+                                question,
+                                questionIndex
+                            )
+                            : createStandardQuestion(
+                                module,
+                                question,
+                                questionIndex
+                            );
+
+
+                    content.appendChild(row);
+
+                }
+            );
+
+
+            details.append(
+                summary,
+                content
+            );
+
+
+            container.appendChild(
+                details
+            );
+
+        }
+    );
+
+}
+
+
+
+/* =========================================================
+   READ STANDARD MODULE
+========================================================= */
+
+function standardRawScore(moduleId) {
+
+    const selects =
+        document.querySelectorAll(
+            `select[data-module="${moduleId}"]`
+        );
+
+
+    let total = 0;
+
+
+    selects.forEach(select => {
+
+        if (select.value !== "") {
+
+            total +=
+                Number(select.value);
+
+        }
+
+    });
+
+
+    return total;
+
+}
+
+
+
+/* =========================================================
+   MODULE 5
+========================================================= */
+
+function getTherapyFrequency(index) {
+
+    const unit =
+        document.querySelector(
+            `.therapy-unit[data-question="${index}"]`
+        );
+
+
+    const amount =
+        document.querySelector(
+            `.therapy-amount[data-question="${index}"]`
+        );
+
+
+    if (
+        !unit ||
+        !unit.value ||
+        unit.value === "none"
+    ) {
+
+        return {
+            selected: !!unit?.value,
+            daily: 0,
+            monthly: 0
+        };
+
+    }
+
+
+    const value =
+        Math.max(
+            0,
+            Number(amount.value || 0)
+        );
+
+
+    if (unit.value === "day") {
+
+        return {
+            selected: true,
+            daily: value,
+            monthly: value * 30
+        };
+
+    }
+
+
+    if (unit.value === "week") {
+
+        return {
+            selected: true,
+            daily: value / 7,
+            monthly: value * 4.3
+        };
+
+    }
+
+
+    return {
+        selected: true,
+        daily: value / 30,
+        monthly: value
+    };
+
+}
+
+
+
+function therapyRawScore() {
+
+    /* 5.1 - 5.7 */
+
+    let dailyA = 0;
+
+
+    for (
+        let i = 0;
+        i <= 6;
+        i++
+    ) {
+
+        dailyA +=
+            getTherapyFrequency(i).daily;
+
+    }
+
+
+    let scoreA = 0;
+
+
+    if (dailyA >= 1 && dailyA <= 3) {
+
+        scoreA = 1;
+
+    } else if (
+        dailyA > 3 &&
+        dailyA <= 8
+    ) {
+
+        scoreA = 2;
+
+    } else if (
+        dailyA > 8
+    ) {
+
+        scoreA = 3;
+
+    }
+
+
+
+    /* 5.8 - 5.11 */
+
+    let dailyB = 0;
+
+
+    for (
+        let i = 7;
+        i <= 10;
+        i++
+    ) {
+
+        dailyB +=
+            getTherapyFrequency(i).daily;
+
+    }
+
+
+    let scoreB = 0;
+
+
+    if (
+        dailyB >= (1 / 7) &&
+        dailyB < 1
+    ) {
+
+        scoreB = 1;
+
+    } else if (
+        dailyB >= 1 &&
+        dailyB < 3
+    ) {
+
+        scoreB = 2;
+
+    } else if (
+        dailyB >= 3
+    ) {
+
+        scoreB = 3;
+
+    }
+
+
+
+    /* 5.12 - 5.15 */
+
+    let monthlyC = 0;
+
+
+    for (
+        let i = 11;
+        i <= 14;
+        i++
+    ) {
+
+        const frequency =
+            getTherapyFrequency(i);
+
+
+        const factor =
+            (i === 11 || i === 14)
+                ? 2
+                : 1;
+
+
+        monthlyC +=
+            frequency.monthly * factor;
+
+    }
+
+
+    let scoreC = 0;
+
+
+    if (monthlyC >= 4.3 &&
+        monthlyC < 8.6) {
+
+        scoreC = 1;
+
+    } else if (
+        monthlyC >= 8.6 &&
+        monthlyC < 12.9
+    ) {
+
+        scoreC = 2;
+
+    } else if (
+        monthlyC >= 12.9 &&
+        monthlyC < 60
+    ) {
+
+        scoreC = 3;
+
+    } else if (
+        monthlyC >= 60
+    ) {
+
+        scoreC = 6;
+
+    }
+
+
+
+    /* 5.16 */
+
+    const diet =
+        document.querySelector(
+            '.therapy-independence'
+        );
+
+
+    const scoreD =
+        diet && diet.value !== ""
+            ? Number(diet.value)
+            : 0;
+
+
+    return (
+        scoreA +
+        scoreB +
+        scoreC +
+        scoreD
+    );
+
+}
+
+
+
+/* =========================================================
+   WEIGHT MODULES
+========================================================= */
+
+function weightModule1(raw) {
+
+    if (raw <= 1) return 0;
+    if (raw <= 3) return 2.5;
+    if (raw <= 5) return 5;
+    if (raw <= 9) return 7.5;
+
+    return 10;
+
+}
+
+
+function weightModule2(raw) {
+
+    if (raw <= 1) return 0;
+    if (raw <= 5) return 3.75;
+    if (raw <= 10) return 7.5;
+    if (raw <= 16) return 11.25;
+
+    return 15;
+
+}
+
+
+function weightModule3(raw) {
+
+    if (raw === 0) return 0;
+    if (raw <= 2) return 3.75;
+    if (raw <= 4) return 7.5;
+    if (raw <= 6) return 11.25;
+
+    return 15;
+
+}
+
+
+function weightModule4(raw) {
+
+    if (raw <= 2) return 0;
+    if (raw <= 7) return 10;
+    if (raw <= 18) return 20;
+    if (raw <= 36) return 30;
+
+    return 40;
+
+}
+
+
+function weightModule5(raw) {
+
+    if (raw === 0) return 0;
+    if (raw === 1) return 5;
+    if (raw <= 3) return 10;
+    if (raw <= 5) return 15;
+
+    return 20;
+
+}
+
+
+function weightModule6(raw) {
+
+    if (raw === 0) return 0;
+    if (raw <= 3) return 3.75;
+    if (raw <= 6) return 7.5;
+    if (raw <= 11) return 11.25;
+
+    return 15;
+
+}
+
+
+
+/* =========================================================
+   DETERMINE GRADE
+========================================================= */
+
+function determineGrade(
+    score,
+    special
+) {
+
+    if (special) {
+
+        return {
+            grade: 5,
+            label: "Pflegegrad 5"
+        };
+
+    }
+
+
+    if (score < 12.5) {
+
+        return {
+            grade: 0,
+            label: "Noch kein Pflegegrad"
+        };
+
+    }
+
+
+    if (score < 27) {
+
+        return {
+            grade: 1,
+            label: "Pflegegrad 1"
+        };
+
+    }
+
+
+    if (score < 47.5) {
+
+        return {
+            grade: 2,
+            label: "Pflegegrad 2"
+        };
+
+    }
+
+
+    if (score < 70) {
+
+        return {
+            grade: 3,
+            label: "Pflegegrad 3"
+        };
+
+    }
+
+
+    if (score < 90) {
+
+        return {
+            grade: 4,
+            label: "Pflegegrad 4"
+        };
+
+    }
+
+
+    return {
+        grade: 5,
+        label: "Pflegegrad 5"
+    };
+
+}
+
+
+
+/* =========================================================
+   ANSWER PROGRESS
+========================================================= */
+
+function calculateProgress() {
+
+    let answered = 0;
+    let total = 0;
+
+
+    /* modules 1,2,3,4,6 */
+
+    [
+        1,
+        2,
+        3,
+        4,
+        6
+    ].forEach(moduleId => {
+
+        document
+            .querySelectorAll(
+                `select[data-module="${moduleId}"]`
+            )
+            .forEach(select => {
+
+                total++;
+
+                if (select.value !== "") {
+                    answered++;
+                }
+
+            });
+
+    });
+
+
+
+    /* module 5 */
+
+    for (
+        let i = 0;
+        i <= 14;
+        i++
+    ) {
+
+        total++;
+
+        const unit =
+            document.querySelector(
+                `.therapy-unit[data-question="${i}"]`
+            );
+
+
+        if (unit && unit.value !== "") {
+
+            answered++;
+
+        }
+
+    }
+
+
+    total++;
+
+
+    const diet =
+        document.querySelector(
+            ".therapy-independence"
+        );
+
+
+    if (
+        diet &&
+        diet.value !== ""
+    ) {
+
+        answered++;
+
+    }
+
+
+    return {
+        answered,
+        total,
+        percent:
+            Math.round(
+                answered / total * 100
+            )
+    };
+
+}
+
+
+
+/* =========================================================
+   CALCULATE
+========================================================= */
+
+function calculateEverything() {
+
+    const raw1 =
+        standardRawScore(1);
+
+    const raw2 =
+        standardRawScore(2);
+
+    const raw3 =
+        standardRawScore(3);
+
+    const raw4 =
+        standardRawScore(4);
+
+    const raw5 =
+        therapyRawScore();
+
+    const raw6 =
+        standardRawScore(6);
+
+
+
+    const weighted1 =
+        weightModule1(raw1);
+
+    const weighted2 =
+        weightModule2(raw2);
+
+    const weighted3 =
+        weightModule3(raw3);
+
+    const weighted4 =
+        weightModule4(raw4);
+
+    const weighted5 =
+        weightModule5(raw5);
+
+    const weighted6 =
+        weightModule6(raw6);
+
+
+
+    const cognitiveBehaviour =
+        Math.max(
+            weighted2,
+            weighted3
+        );
+
+
+    let total =
+        weighted1 +
+        cognitiveBehaviour +
+        weighted4 +
+        weighted5 +
+        weighted6;
+
+
+    total =
+        Math.round(total * 100) / 100;
+
+
+
+    const special =
+        document
+            .getElementById(
+                "special-condition"
+            )
+            .checked;
+
+
+    const result =
+        determineGrade(
+            total,
+            special
+        );
+
+
+
+    /* top result */
+
+    document
+        .getElementById(
+            "pflege-grade"
+        )
+        .textContent =
+            result.label;
+
+
+    document
+        .getElementById(
+            "pflege-points"
+        )
+        .textContent =
+            `${formatPoints(total)} Punkte`;
+
+
+
+    /* bottom result */
+
+    document
+        .getElementById(
+            "final-grade"
+        )
+        .textContent =
+            result.label;
+
+
+    document
+        .getElementById(
+            "final-points"
+        )
+        .textContent =
+            formatPoints(total);
+
+
+
+    /* module labels */
+
+    const moduleScores = {
+
+        1: weighted1,
+
+        2: weighted2,
+
+        3: weighted3,
+
+        4: weighted4,
+
+        5: weighted5,
+
+        6: weighted6
+
+    };
+
+
+    Object.entries(
+        moduleScores
+    ).forEach(([id, value]) => {
+
+        document
+            .getElementById(
+                `module-score-${id}`
+            )
+            .textContent =
+                `${formatPoints(value)} P.`;
+
+    });
+
+
+
+    /* progress */
+
+    const progress =
+        calculateProgress();
+
+
+    document
+        .getElementById(
+            "answer-progress"
+        )
+        .style.width =
+            `${progress.percent}%`;
+
+
+    document
+        .getElementById(
+            "answer-progress-label"
+        )
+        .textContent =
+            `${progress.percent} %`;
+
+
+
+    /* breakdown */
+
+    renderBreakdown(
+        weighted1,
+        weighted2,
+        weighted3,
+        weighted4,
+        weighted5,
+        weighted6
+    );
+
+}
+
+
+
+/* =========================================================
+   FORMAT
+========================================================= */
+
+function formatPoints(value) {
+
+    return value
+        .toLocaleString(
+            "de-DE",
+            {
+                maximumFractionDigits: 2
+            }
+        );
+
+}
+
+
+
+/* =========================================================
+   BREAKDOWN
+========================================================= */
+
+function renderBreakdown(
+    m1,
+    m2,
+    m3,
+    m4,
+    m5,
+    m6
+) {
+
+    const container =
+        document.getElementById(
+            "score-breakdown"
+        );
+
+
+    container.innerHTML = "";
+
+
+    const rows = [
+
+        ["Mobilität", m1],
+
+        [
+            "Kognition / Verhalten",
+            Math.max(m2, m3)
+        ],
+
+        ["Selbstversorgung", m4],
+
+        ["Therapie", m5],
+
+        ["Alltagsleben", m6]
+
+    ];
+
+
+    rows.forEach(row => {
+
+        const element =
+            document.createElement("div");
+
+        element.className =
+            "pflege-breakdown-row";
+
+
+        element.innerHTML = `
+
+            <span>
+                ${row[0]}
+            </span>
+
+            <strong>
+                ${formatPoints(row[1])} P.
+            </strong>
+
+        `;
+
+
+        container.appendChild(
+            element
+        );
+
+    });
+
+}
+
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+function resetCalculator() {
+
+    document
+        .querySelectorAll(
+            ".pflege-calculator select"
+        )
+        .forEach(select => {
+
+            select.value = "";
+
+        });
+
+
+    document
+        .querySelectorAll(
+            ".therapy-amount"
+        )
+        .forEach(input => {
+
+            input.value = "";
+
+            input.disabled = true;
+
+        });
+
+
+    document
+        .getElementById(
+            "special-condition"
+        )
+        .checked = false;
+
+
+    calculateEverything();
+
+
+    window.scrollTo({
+        top:
+            document
+                .querySelector(
+                    ".pflege-calculator"
+                )
+                .offsetTop - 80,
+
+        behavior:
+            "smooth"
+    });
+
+}
+
+
+
+/* =========================================================
+   INIT
+========================================================= */
+
+renderModules();
+
+
+document
+    .getElementById(
+        "special-condition"
+    )
+    .addEventListener(
+        "change",
+        calculateEverything
+    );
+
+
+document
+    .getElementById(
+        "pflege-reset"
+    )
+    .addEventListener(
+        "click",
+        resetCalculator
+    );
+
+
+calculateEverything();
+
+</script>
+
+
+</body>
+
+</html>
